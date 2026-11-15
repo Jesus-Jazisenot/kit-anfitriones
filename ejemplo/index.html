@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Depa Pelícano 27 — Guía del huésped / Guest guide</title>
+<meta name="description" content="Departamento de ejemplo en la Zona Dorada, a dos cuadras de la playa · Sample apartment in the Golden Zone, two blocks from the beach">
+<meta name="robots" content="noindex">
+<style>
+:root{--acento:#0E5A6B;--fg:#1c2326;--muted:#5b6569;--line:#dfe4e5;--bg:#fbfaf7;--card:#fff;--coral:#c9492c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-wrap:break-word}
+a{color:var(--acento)}
+header{padding:22px 16px 6px;max-width:640px;margin:0 auto}
+.sobre{font:600 .74rem/1 inherit;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+h1{font:700 1.75rem/1.15 Georgia,"Times New Roman",serif;color:var(--acento);margin:0 0 6px;text-wrap:balance}
+.lema{color:var(--muted);font-style:italic;margin:0}
+.barra{position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--line)}
+.barra-in{max-width:640px;margin:0 auto;padding:8px 16px;display:flex;gap:10px;align-items:center}
+.idioma{display:flex;border:1.5px solid var(--acento);border-radius:99px;overflow:hidden;flex:none}
+.idioma button{font:600 .9rem/1 inherit;padding:10px 13px;border:0;background:transparent;color:var(--acento);cursor:pointer;min-height:40px}
+.idioma button[aria-pressed="true"]{background:var(--acento);color:#fff}
+nav{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+nav::-webkit-scrollbar{display:none}
+nav a{flex:none;font-size:.86rem;color:var(--fg);text-decoration:none;padding:9px 12px;border-radius:99px;background:var(--card);border:1px solid var(--line)}
+main{max-width:640px;margin:0 auto;padding:6px 16px 28px}
+section{scroll-margin-top:66px;padding-top:22px}
+h2{font:700 1.2rem/1.2 Georgia,serif;color:var(--acento);margin:0 0 12px;padding-bottom:6px;border-bottom:2px solid var(--acento)}
+h3{font:650 1rem/1.3 inherit;margin:16px 0 4px}
+p{margin:0 0 .7em}
+ul,ol{margin:0 0 .7em;padding-left:22px}
+li{margin-bottom:.35em}
+.tarjeta{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.horas{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.horas a{text-decoration:none;color:inherit;display:block}
+.eti{font:600 .74rem/1.2 inherit;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);display:block}
+.grande{font:700 1.5rem/1.2 Georgia,serif;color:var(--acento);display:block;margin-top:3px}
+.acciones{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 16px;border-radius:10px;font:650 .95rem/1.2 inherit;text-decoration:none;border:1.5px solid var(--acento);color:var(--acento);background:var(--card);cursor:pointer;flex:1 1 auto;text-align:center}
+.btn.lleno{background:var(--acento);color:#fff}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.wifi dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0 0 12px;align-items:baseline}
+.wifi dt{color:var(--muted);font-size:.9rem}
+.wifi dd{margin:0;font:650 1.08rem/1.3 ui-monospace,Consolas,"SF Mono",Menlo,monospace;user-select:all;-webkit-user-select:all;word-break:break-all}
+.copiado{color:var(--muted);font-size:.86rem;min-height:1.3em;margin:8px 0 0}
+.taxi{border-left:4px solid var(--acento);background:var(--card);padding:12px 14px;border-radius:0 10px 10px 0;margin:10px 0 14px}
+.taxi b{display:block;font-size:1.08rem;line-height:1.35}
+.fila{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.fila:last-child{border-bottom:0}
+.fila .quien{font-weight:650}
+.fila .nota{display:block;font-weight:400;color:var(--muted);font-size:.88rem}
+.fila a.tel{flex:none;font:700 1rem/1 inherit;text-decoration:none;color:#fff;background:var(--coral);padding:12px 14px;border-radius:10px;white-space:nowrap}
+.lugar{padding:12px 0;border-bottom:1px solid var(--line)}
+.lugar:last-child{border-bottom:0}
+.lugar .nom{font-weight:650}
+.lugar p{color:var(--muted);font-size:.93rem;margin:2px 0 4px}
+.tipo{font-size:.72rem;padding:2px 8px;border-radius:99px;border:1px solid var(--line);color:var(--muted);background:var(--card);margin-left:6px;white-space:nowrap;font-weight:400}
+.qrcaja{display:grid;grid-template-columns:132px 1fr;gap:14px;align-items:center}
+.qr{width:132px;height:132px;display:block;border:1px solid var(--line);border-radius:6px}
+.url{font-size:.82rem;color:var(--muted);word-break:break-all}
+footer{max-width:640px;margin:0 auto;padding:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.84rem}
+.muestra{background:#fff4d6;color:#6b4a00;font-size:.84rem;padding:9px 16px;text-align:center}
+[data-l]{display:none}
+html[lang="es"] [data-l="es"],html[lang="en"] [data-l="en"]{display:revert}
+html[lang="es"] nav a[data-l="es"],html[lang="en"] nav a[data-l="en"]{display:block}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.barra,.acciones,.copiado{display:none}body{background:#fff}section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="muestra"><span data-l="es">EJEMPLO · Este alojamiento no existe; los datos son inventados.</span><span data-l="en">SAMPLE · This place does not exist; all details are made up.</span></div>
+<header>
+  <p class="sobre"><span data-l="es">Guía del huésped</span><span data-l="en">Guest guide</span></p>
+  <h1>Depa Pelícano 27</h1>
+  <p class="lema"><span data-l="es">Departamento de ejemplo en la Zona Dorada, a dos cuadras de la playa</span><span data-l="en">Sample apartment in the Golden Zone, two blocks from the beach</span></p>
+</header>
+<div class="barra"><div class="barra-in">
+  <div class="idioma" role="group" aria-label="Idioma / Language">
+    <button type="button" data-set="es" aria-pressed="true">Español</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+  <nav aria-label="Secciones / Sections"><a href="#wifi" data-l="es">Wifi</a><a href="#wifi" data-l="en">Wi-Fi</a><a href="#llegada" data-l="es">Llegada</a><a href="#llegada" data-l="en">Arrival</a><a href="#casa" data-l="es">La casa</a><a href="#casa" data-l="en">The home</a><a href="#reglas" data-l="es">Reglas</a><a href="#reglas" data-l="en">House rules</a><a href="#salida" data-l="es">Salida</a><a href="#salida" data-l="en">Check-out</a><a href="#ayuda" data-l="es">Ayuda</a><a href="#ayuda" data-l="en">Help</a><a href="#cerca" data-l="es">Cerca</a><a href="#cerca" data-l="en">Nearby</a><a href="#compartir" data-l="es">Compartir</a><a href="#compartir" data-l="en">Share</a></nav>
+</div></div>
+<main>
+<section id="wifi"><h2><span data-l="es">Wifi</span><span data-l="en">Wi-Fi</span></h2>
+
+<div class="tarjeta wifi">
+  <dl>
+    <dt><span data-l="es">Red</span><span data-l="en">Network</span></dt><dd>Pelicano27</dd>
+    <dt><span data-l="es">Clave</span><span data-l="en">Password</span></dt><dd id="clave">olas-y-arena-27</dd>
+  </dl>
+  <button type="button" class="btn lleno" data-copiar="clave" style="width:100%"><span data-l="es">Copiar la clave</span><span data-l="en">Copy password</span></button>
+  <p class="copiado" id="copiado" role="status" aria-live="polite"></p>
+  <div data-l="es"><p>El módem está en la sala, junto a la tele. Si el internet se cae, desconéctalo 30 segundos y vuelve a conectarlo.</p></div><div data-l="en"><p>The router is in the living room, next to the TV. If the internet drops, unplug it for 30 seconds and plug it back in.</p></div>
+</div>
+<div class="horas">
+  <a class="tarjeta" href="#llegada"><span class="eti"><span data-l="es">Entrada</span><span data-l="en">Check-in</span></span><span class="grande">3:00 pm</span></a>
+  <a class="tarjeta" href="#salida"><span class="eti"><span data-l="es">Salida</span><span data-l="en">Check-out</span></span><span class="grande">11:00 am</span></a>
+</div>
+</section>
+<section id="llegada"><h2><span data-l="es">Llegada</span><span data-l="en">Arrival</span></h2>
+<p><b><span data-l="es">Entrada a partir de las</span><span data-l="en">Check-in from</span> 3:00 pm.</b></p>
+<div data-l="es"><p>La entrada es por tu cuenta: las llaves están en una caja con candado de combinación junto a la puerta del departamento. Te mando la combinación por mensaje el día de tu llegada.</p><p>Si llegas antes de la hora, escríbeme: si el departamento ya está limpio, puedes pasar antes.</p></div><div data-l="en"><p>Check-in is self-service: the keys are in a combination lockbox next to the apartment door. I will send you the combination by message on the day you arrive.</p><p>If you arrive early, message me: if the apartment is already clean, you can come in sooner.</p></div>
+<h3><span data-l="es">Dirección</span><span data-l="en">Address</span></h3><p>Av. Camarón Sábalo s/n (dirección ficticia), edificio de ejemplo, depto. 27, Zona Dorada, Mazatlán, Sinaloa</p>
+<p><span data-l="es">Edificio blanco de cuatro pisos, con portón gris. El departamento está en el segundo piso; no hay elevador.</span><span data-l="en">White four-story building with a gray gate. The apartment is on the second floor (one flight up); there is no elevator.</span></p>
+<div class="acciones"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Zona%20Dorada%2C%20Mazatl%C3%A1n%2C%20Sinaloa" target="_blank" rel="noopener"><span data-l="es">Abrir en el mapa</span><span data-l="en">Open in maps</span></a></div>
+<h3><span data-l="es">Cómo llegar</span><span data-l="en">Getting here</span></h3><div data-l="es"><p>Desde el aeropuerto de Mazatlán (MZT) son unos 35 a 45 minutos en carro, según el tráfico. Los taxis autorizados se pagan en el mostrador dentro de la terminal, antes de salir.</p><p>Si vienes manejando, la avenida Camarón Sábalo es la principal de la Zona Dorada.</p></div><div data-l="en"><p>From Mazatlán airport (MZT) it is about 35 to 45 minutes by car, depending on traffic. Authorized taxis are paid for at the counter inside the terminal, before you walk out.</p><p>If you are driving, Avenida Camarón Sábalo is the main avenue of the Golden Zone.</p></div>
+<div class="taxi"><span class="eti"><span data-l="es">Enséñale esto al chofer</span><span data-l="en">Show this to your driver</span></span><b lang="es">Voy a la Zona Dorada, sobre la avenida Camarón Sábalo. Edificio blanco de cuatro pisos con portón gris.</b></div>
+<h3><span data-l="es">Estacionamiento</span><span data-l="en">Parking</span></h3><div data-l="es"><p>Hay un cajón techado para un carro, marcado con el número 27. El portón se abre con el control que está en el llavero. No cabe un segundo carro: en la calle se puede estacionar sin costo, bajo tu responsabilidad.</p></div><div data-l="en"><p>There is one covered parking space, marked with the number 27. The gate opens with the remote on the key ring. A second car will not fit: street parking is free, at your own risk.</p></div>
+</section>
+<section id="casa"><h2><span data-l="es">La casa</span><span data-l="en">The home</span></h2>
+<h3><span data-l="es">Aire acondicionado</span><span data-l="en">Air conditioning</span></h3><div data-l="es"><p>Cada recámara y la sala tienen su propio aire, con control remoto. Te recomiendo dejarlo en 24 °C: enfría bien y no gotea.</p><p>Por favor apágalo y cierra las ventanas cuando salgas. La luz en Mazatlán es cara en verano.</p></div><div data-l="en"><p>Each bedroom and the living room has its own air conditioner with a remote. I recommend 24 °C (75 °F): it cools well and will not drip.</p><p>Please turn it off and close the windows when you go out. Electricity in Mazatlán is expensive in summer.</p></div>
+<h3><span data-l="es">Agua</span><span data-l="en">Water</span></h3><div data-l="es"><p>El agua de la llave no es para beber. En la cocina hay un garrafón de agua purificada; si se termina, avísame y te llevo otro.</p><p>El agua caliente tarda como un minuto en llegar a la regadera. El boiler es automático, no hay que prender nada.</p></div><div data-l="en"><p>Tap water is not for drinking. There is a large jug of purified water in the kitchen; if it runs out, let me know and I will bring another one.</p><p>Hot water takes about a minute to reach the shower. The water heater is automatic; you do not need to switch anything on.</p></div>
+<h3><span data-l="es">Basura</span><span data-l="en">Trash</span></h3><div data-l="es"><p>Las bolsas van en los botes grises de la planta baja, junto al estacionamiento. Hay bolsas nuevas bajo el fregadero.</p><p>Por favor no dejes bolsas en el pasillo: con el calor huelen pronto.</p></div><div data-l="en"><p>Trash bags go in the gray bins on the ground floor, next to the parking area. You will find new bags under the kitchen sink.</p><p>Please do not leave bags in the hallway: in this heat they smell quickly.</p></div>
+<h3><span data-l="es">Cocina</span><span data-l="en">Kitchen</span></h3><div data-l="es"><p>La estufa es de gas y prende con el encendedor que está en el primer cajón. Hay cafetera, licuadora, sartenes y platos para seis. Sal, aceite y café: úsalos con confianza.</p></div><div data-l="en"><p>The stove runs on gas; light it with the lighter in the top drawer. There is a coffee maker, a blender, pans and dishes for six. Salt, oil and coffee: help yourself.</p></div>
+<h3><span data-l="es">Playa</span><span data-l="en">Beach</span></h3><div data-l="es"><p>En el clóset de la entrada hay dos sillas, una sombrilla y toallas de playa (las de rayas). Las toallas blancas son para el baño. Antes de subir, enjuágate la arena en la regadera de la planta baja.</p><p>Fíjate en las banderas de la playa: verde es mar tranquilo, amarilla es precaución y roja es no meterse.</p></div><div data-l="en"><p>In the entry closet you will find two chairs, an umbrella and beach towels (the striped ones). The white towels are for the bathroom. Before coming upstairs, please rinse off the sand at the ground-floor shower.</p><p>Watch the beach flags: green means calm water, yellow means caution and red means stay out.</p></div>
+<h3><span data-l="es">Luz y seguridad</span><span data-l="en">Power and safety</span></h3><div data-l="es"><p>La caja de pastillas de la luz está detrás de la puerta de entrada. Si se va la luz en un solo cuarto, sube la pastilla que se haya bajado.</p><p>El extintor está en la cocina, junto al refrigerador, y el botiquín en el baño principal. La corriente es de 127 V con enchufes iguales a los de Estados Unidos y Canadá.</p></div><div data-l="en"><p>The breaker box is behind the front door. If the power goes out in just one room, flip back up the switch that has dropped.</p><p>The fire extinguisher is in the kitchen, next to the fridge, and the first-aid kit is in the main bathroom. Power is 127 V with the same plugs as the United States and Canada.</p></div>
+</section>
+<section id="reglas"><h2><span data-l="es">Reglas</span><span data-l="en">House rules</span></h2>
+<ul data-l="es"><li>Máximo 6 personas. No se permiten fiestas ni eventos.</li><li>Silencio de 10:00 pm a 8:00 am: hay vecinos que viven aquí todo el año.</li><li>No se fuma dentro del departamento. En el balcón sí, con la puerta cerrada.</li><li>No se aceptan mascotas.</li><li>Las visitas son bienvenidas de día; solo se quedan a dormir las personas de la reservación.</li><li>Si algo se rompe, avísame. Pasa, y prefiero saberlo para reponerlo antes del siguiente huésped.</li></ul><ul data-l="en"><li>Maximum 6 guests. No parties or events.</li><li>Quiet hours from 10 pm to 8 am: some neighbors live here all year.</li><li>No smoking inside the apartment. Smoking is fine on the balcony with the door closed.</li><li>No pets.</li><li>Daytime visitors are welcome; only the guests on the reservation may stay overnight.</li><li>If something breaks, just tell me. It happens, and I would rather know so I can replace it before the next guest.</li></ul>
+</section>
+<section id="salida"><h2><span data-l="es">Salida</span><span data-l="en">Check-out</span></h2>
+<p><b><span data-l="es">Salida a más tardar a las</span><span data-l="en">Check-out by</span> 11:00 am.</b></p>
+<ol data-l="es"><li>Apaga los aires y las luces, y cierra las ventanas.</li><li>Deja los trastes lavados o en el fregadero con agua.</li><li>Baja la basura a los botes grises de la planta baja.</li><li>Deja las toallas usadas en el piso de la regadera.</li><li>Cierra con llave y regresa las llaves a la caja; revuelve la combinación.</li></ol><ol data-l="en"><li>Turn off the air conditioners and lights, and close the windows.</li><li>Leave the dishes washed, or soaking in the sink.</li><li>Take the trash down to the gray bins on the ground floor.</li><li>Leave used towels on the shower floor.</li><li>Lock the door and put the keys back in the lockbox; scramble the combination.</li></ol>
+<p><span data-l="es">¿Necesitas salir más tarde? Pregúntame el día anterior: si no llega nadie ese día, casi siempre se puede.</span><span data-l="en">Need a late check-out? Ask me the day before: if no one is arriving that day, it is usually possible.</span></p>
+</section>
+<section id="ayuda"><h2><span data-l="es">Ayuda</span><span data-l="en">Help</span></h2>
+<div class="tarjeta">
+  <span class="eti"><span data-l="es">Tu anfitrión</span><span data-l="en">Your host</span></span>
+  <span class="grande">Marisol</span>
+  <p style="margin:6px 0 0;color:var(--muted)"><span data-l="es">Contesto mensajes de 8:00 am a 10:00 pm. Si es una urgencia, llama a cualquier hora.</span><span data-l="en">I answer messages from 8 am to 10 pm. If it is urgent, call me at any time.</span></p>
+  <div class="acciones">
+    <a class="btn lleno" href="https://wa.me/526690000000" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn" href="tel:+526690000000"><span><span data-l="es">Llamar</span><span data-l="en">Call</span> 669 000 0000</span></a>
+  </div>
+</div>
+<h3><span data-l="es">Emergencias</span><span data-l="en">Emergencies</span></h3>
+<div class="fila"><span class="quien"><span data-l="es">Emergencias: policía, ambulancia, bomberos</span><span data-l="en">Emergencies: police, ambulance, fire</span><span class="nota"><span data-l="es">Número nacional, gratuito, las 24 horas</span><span data-l="en">Nationwide, free, 24 hours</span></span></span><a class="tel" href="tel:911">911</a></div>
+<div class="fila"><span class="quien"><span data-l="es">Ángeles Verdes: auxilio en carretera</span><span data-l="en">Ángeles Verdes: roadside help for travelers</span><span class="nota"><span data-l="es">Si tu carro falla en carretera</span><span data-l="en">If your car breaks down on the highway</span></span></span><a class="tel" href="tel:078">078</a></div>
+</section>
+<section id="cerca"><h2><span data-l="es">Cerca</span><span data-l="en">Nearby</span></h2>
+<div class="lugar"><span class="nom"><span data-l="es">Tienda de conveniencia</span><span data-l="en">Convenience store</span></span><span class="tipo"><span data-l="es">Compras</span><span data-l="en">Shopping</span></span><p><span data-l="es">En la esquina, a media cuadra. Abre todo el día; hay agua, hielo, botanas y recargas de celular.</span><span data-l="en">On the corner, half a block away. Open all day; water, ice, snacks and phone top-ups.</span></p></div>
+<div class="lugar"><span class="nom"><span data-l="es">Farmacia</span><span data-l="en">Pharmacy</span></span><span class="tipo"><span data-l="es">Salud</span><span data-l="en">Health</span></span><p><span data-l="es">A dos cuadras sobre la avenida, hacia el sur. Tiene consultorio médico a un lado.</span><span data-l="en">Two blocks south along the avenue. There is a walk-in doctor&#x27;s office next door.</span></p></div>
+<div class="lugar"><span class="nom"><span data-l="es">Supermercado</span><span data-l="en">Supermarket</span></span><span class="tipo"><span data-l="es">Compras</span><span data-l="en">Shopping</span></span><p><span data-l="es">A unos 10 minutos en carro. Pregúntame cuál te queda mejor según lo que busques.</span><span data-l="en">About 10 minutes by car. Ask me which one suits you best depending on what you need.</span></p></div>
+<div class="lugar"><span class="nom">Playa Gaviotas</span><span class="tipo"><span data-l="es">Playa</span><span data-l="en">Beach</span></span><p><span data-l="es">La playa de la Zona Dorada, a dos cuadras caminando. El atardecer se ve de frente.</span><span data-l="en">The Golden Zone beach, a two-block walk. You get the sunset straight ahead.</span></p><a href="https://www.google.com/maps/search/?api=1&amp;query=Playa%20Gaviotas%2C%20Mazatl%C3%A1n%2C%20Sinaloa" target="_blank" rel="noopener"><span data-l="es">Ver en el mapa</span><span data-l="en">See on map</span></a></div>
+<div class="lugar"><span class="nom"><span data-l="es">Malecón de Mazatlán</span><span data-l="en">Mazatlán Malecón (seaside boardwalk)</span></span><span class="tipo"><span data-l="es">Paseo</span><span data-l="en">Sights</span></span><p><span data-l="es">El paseo junto al mar que va de la Zona Dorada hacia el Centro. Ideal para caminar o andar en bici temprano o al atardecer.</span><span data-l="en">The seaside promenade that runs from the Golden Zone toward downtown. Best for a walk or bike ride early in the morning or at sunset.</span></p><a href="https://www.google.com/maps/search/?api=1&amp;query=Malec%C3%B3n%20de%20Mazatl%C3%A1n%2C%20Sinaloa" target="_blank" rel="noopener"><span data-l="es">Ver en el mapa</span><span data-l="en">See on map</span></a></div>
+<div class="lugar"><span class="nom"><span data-l="es">Centro Histórico y Plazuela Machado</span><span data-l="en">Historic Center and Plazuela Machado</span></span><span class="tipo"><span data-l="es">Paseo</span><span data-l="en">Sights</span></span><p><span data-l="es">Calles antiguas, cafés y restaurantes alrededor de la plazuela. De noche hay más ambiente.</span><span data-l="en">Old streets, cafés and restaurants around the square. It is livelier in the evening.</span></p><a href="https://www.google.com/maps/search/?api=1&amp;query=Plazuela%20Machado%2C%20Mazatl%C3%A1n%2C%20Sinaloa" target="_blank" rel="noopener"><span data-l="es">Ver en el mapa</span><span data-l="en">See on map</span></a></div>
+<div class="lugar"><span class="nom"><span data-l="es">El Faro</span><span data-l="en">El Faro lighthouse</span></span><span class="tipo"><span data-l="es">Paseo</span><span data-l="en">Sights</span></span><p><span data-l="es">Subida a pie con vista a toda la ciudad. Ve temprano, con agua y tenis: es pura subida y pega el sol.</span><span data-l="en">An uphill walk with a view of the whole city. Go early, with water and sneakers: it is all uphill and there is little shade.</span></p><a href="https://www.google.com/maps/search/?api=1&amp;query=Faro%20de%20Mazatl%C3%A1n%2C%20Sinaloa" target="_blank" rel="noopener"><span data-l="es">Ver en el mapa</span><span data-l="en">See on map</span></a></div>
+<div class="lugar"><span class="nom"><span data-l="es">Pulmonías y camiones</span><span data-l="en">Pulmonías and buses</span></span><span class="tipo"><span data-l="es">Transporte</span><span data-l="en">Getting around</span></span><p><span data-l="es">La pulmonía es el taxi abierto típico de Mazatlán: acuerda el precio antes de subirte. Sobre la avenida también pasan camiones hacia el Centro.</span><span data-l="en">A pulmonía is Mazatlán&#x27;s typical open-air taxi: agree on the price before you get in. Buses to downtown also run along the avenue.</span></p></div>
+</section>
+<section id="compartir"><h2><span data-l="es">Compartir</span><span data-l="en">Share</span></h2>
+
+<div class="qrcaja">
+  <svg class="qr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" shape-rendering="crispEdges" role="img" aria-label="QR"><rect width="41" height="41" fill="#fff"/><path fill="#000" d="M4 4h7v1h-7zM13 4h2v1h-2zM16 4h2v1h-2zM20 4h1v1h-1zM22 4h3v1h-3zM27 4h2v1h-2zM30 4h7v1h-7zM4 5h1v1h-1zM10 5h1v1h-1zM14 5h2v1h-2zM17 5h4v1h-4zM25 5h1v1h-1zM30 5h1v1h-1zM36 5h1v1h-1zM4 6h1v1h-1zM6 6h3v1h-3zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h2v1h-2zM17 6h1v1h-1zM19 6h2v1h-2zM23 6h6v1h-6zM30 6h1v1h-1zM32 6h3v1h-3zM36 6h1v1h-1zM4 7h1v1h-1zM6 7h3v1h-3zM10 7h1v1h-1zM12 7h3v1h-3zM16 7h1v1h-1zM18 7h4v1h-4zM23 7h1v1h-1zM26 7h1v1h-1zM28 7h1v1h-1zM30 7h1v1h-1zM32 7h3v1h-3zM36 7h1v1h-1zM4 8h1v1h-1zM6 8h3v1h-3zM10 8h1v1h-1zM12 8h3v1h-3zM19 8h1v1h-1zM21 8h4v1h-4zM27 8h1v1h-1zM30 8h1v1h-1zM32 8h3v1h-3zM36 8h1v1h-1zM4 9h1v1h-1zM10 9h1v1h-1zM12 9h1v1h-1zM15 9h1v1h-1zM17 9h1v1h-1zM19 9h3v1h-3zM25 9h2v1h-2zM28 9h1v1h-1zM30 9h1v1h-1zM36 9h1v1h-1zM4 10h7v1h-7zM12 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM18 10h1v1h-1zM20 10h1v1h-1zM22 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM28 10h1v1h-1zM30 10h7v1h-7zM12 11h1v1h-1zM14 11h1v1h-1zM16 11h1v1h-1zM19 11h1v1h-1zM23 11h1v1h-1zM25 11h4v1h-4zM4 12h1v1h-1zM6 12h5v1h-5zM15 12h1v1h-1zM17 12h1v1h-1zM19 12h3v1h-3zM23 12h1v1h-1zM26 12h1v1h-1zM30 12h5v1h-5zM4 13h2v1h-2zM8 13h2v1h-2zM11 13h6v1h-6zM20 13h2v1h-2zM23 13h2v1h-2zM27 13h1v1h-1zM30 13h2v1h-2zM33 13h2v1h-2zM36 13h1v1h-1zM4 14h1v1h-1zM6 14h2v1h-2zM9 14h5v1h-5zM15 14h1v1h-1zM19 14h1v1h-1zM24 14h1v1h-1zM26 14h1v1h-1zM32 14h1v1h-1zM34 14h1v1h-1zM6 15h1v1h-1zM14 15h1v1h-1zM16 15h1v1h-1zM18 15h2v1h-2zM24 15h3v1h-3zM29 15h1v1h-1zM32 15h5v1h-5zM5 16h1v1h-1zM7 16h8v1h-8zM16 16h1v1h-1zM21 16h1v1h-1zM26 16h1v1h-1zM29 16h1v1h-1zM31 16h3v1h-3zM35 16h2v1h-2zM6 17h2v1h-2zM9 17h1v1h-1zM12 17h2v1h-2zM15 17h2v1h-2zM18 17h3v1h-3zM23 17h2v1h-2zM27 17h1v1h-1zM30 17h1v1h-1zM33 17h1v1h-1zM35 17h2v1h-2zM6 18h5v1h-5zM12 18h1v1h-1zM15 18h1v1h-1zM17 18h1v1h-1zM24 18h1v1h-1zM28 18h3v1h-3zM33 18h1v1h-1zM35 18h1v1h-1zM4 19h3v1h-3zM8 19h1v1h-1zM12 19h3v1h-3zM16 19h1v1h-1zM20 19h1v1h-1zM22 19h1v1h-1zM24 19h2v1h-2zM29 19h2v1h-2zM32 19h3v1h-3zM4 20h1v1h-1zM8 20h3v1h-3zM12 20h2v1h-2zM15 20h1v1h-1zM17 20h1v1h-1zM21 20h2v1h-2zM26 20h1v1h-1zM29 20h1v1h-1zM31 20h2v1h-2zM36 20h1v1h-1zM5 21h1v1h-1zM7 21h1v1h-1zM14 21h1v1h-1zM17 21h1v1h-1zM20 21h1v1h-1zM22 21h3v1h-3zM27 21h1v1h-1zM30 21h2v1h-2zM33 21h2v1h-2zM36 21h1v1h-1zM5 22h2v1h-2zM8 22h1v1h-1zM10 22h3v1h-3zM15 22h1v1h-1zM18 22h2v1h-2zM22 22h1v1h-1zM24 22h1v1h-1zM26 22h1v1h-1zM29 22h4v1h-4zM34 22h2v1h-2zM5 23h1v1h-1zM7 23h3v1h-3zM12 23h1v1h-1zM15 23h1v1h-1zM17 23h1v1h-1zM19 23h2v1h-2zM22 23h2v1h-2zM25 23h1v1h-1zM27 23h2v1h-2zM30 23h6v1h-6zM5 24h1v1h-1zM7 24h2v1h-2zM10 24h2v1h-2zM13 24h4v1h-4zM19 24h1v1h-1zM21 24h1v1h-1zM26 24h1v1h-1zM29 24h1v1h-1zM31 24h3v1h-3zM36 24h1v1h-1zM4 25h2v1h-2zM8 25h2v1h-2zM11 25h1v1h-1zM13 25h3v1h-3zM17 25h3v1h-3zM21 25h5v1h-5zM27 25h1v1h-1zM30 25h2v1h-2zM36 25h1v1h-1zM4 26h1v1h-1zM7 26h1v1h-1zM9 26h3v1h-3zM14 26h1v1h-1zM16 26h1v1h-1zM19 26h3v1h-3zM24 26h2v1h-2zM30 26h2v1h-2zM33 26h1v1h-1zM35 26h1v1h-1zM4 27h1v1h-1zM7 27h1v1h-1zM11 27h1v1h-1zM13 27h2v1h-2zM16 27h2v1h-2zM20 27h1v1h-1zM22 27h5v1h-5zM28 27h1v1h-1zM30 27h1v1h-1zM33 27h2v1h-2zM36 27h1v1h-1zM4 28h1v1h-1zM6 28h1v1h-1zM9 28h2v1h-2zM12 28h1v1h-1zM15 28h2v1h-2zM18 28h1v1h-1zM20 28h2v1h-2zM23 28h2v1h-2zM26 28h7v1h-7zM36 28h1v1h-1zM12 29h1v1h-1zM15 29h1v1h-1zM17 29h1v1h-1zM20 29h9v1h-9zM32 29h1v1h-1zM34 29h1v1h-1zM36 29h1v1h-1zM4 30h7v1h-7zM14 30h1v1h-1zM16 30h2v1h-2zM19 30h2v1h-2zM24 30h5v1h-5zM30 30h1v1h-1zM32 30h1v1h-1zM34 30h2v1h-2zM4 31h1v1h-1zM10 31h1v1h-1zM12 31h1v1h-1zM14 31h1v1h-1zM16 31h1v1h-1zM19 31h1v1h-1zM22 31h1v1h-1zM25 31h4v1h-4zM32 31h3v1h-3zM36 31h1v1h-1zM4 32h1v1h-1zM6 32h3v1h-3zM10 32h1v1h-1zM12 32h1v1h-1zM17 32h1v1h-1zM21 32h1v1h-1zM23 32h1v1h-1zM26 32h1v1h-1zM28 32h6v1h-6zM35 32h2v1h-2zM4 33h1v1h-1zM6 33h3v1h-3zM10 33h1v1h-1zM12 33h2v1h-2zM15 33h1v1h-1zM17 33h2v1h-2zM22 33h2v1h-2zM26 33h4v1h-4zM32 33h1v1h-1zM35 33h2v1h-2zM4 34h1v1h-1zM6 34h3v1h-3zM10 34h1v1h-1zM12 34h2v1h-2zM16 34h6v1h-6zM24 34h1v1h-1zM27 34h2v1h-2zM30 34h2v1h-2zM33 34h2v1h-2zM4 35h1v1h-1zM10 35h1v1h-1zM17 35h1v1h-1zM20 35h1v1h-1zM23 35h1v1h-1zM25 35h1v1h-1zM29 35h1v1h-1zM32 35h3v1h-3zM4 36h7v1h-7zM12 36h2v1h-2zM16 36h2v1h-2zM21 36h1v1h-1zM26 36h3v1h-3zM30 36h2v1h-2zM33 36h1v1h-1zM35 36h1v1h-1z"/></svg>
+  <div>
+    <p><span data-l="es">Que tus acompañantes escaneen este código para abrir la guía en su celular.</span><span data-l="en">Have your travel companions scan this code to open the guide on their phones.</span></p>
+    <p class="url">https://jesus-jazisenot.github.io/kit-anfitriones/ejemplo/</p>
+  </div>
+</div>
+<div class="acciones"><a class="btn" href="hoja.pdf"><span data-l="es">Hoja para imprimir (PDF)</span><span data-l="en">Printable sheet (PDF)</span></a></div>
+</section>
+</main>
+<footer>
+  <p><span data-l="es">Guía de ejemplo: este departamento no existe. Cualquier duda, escríbele a tu anfitrión.</span><span data-l="en">Sample guide: this apartment does not exist. Any questions, message your host.</span></p>
+</footer>
+<script>
+(function(){
+  var raiz=document.documentElement, botones=document.querySelectorAll('[data-set]');
+  function poner(l){
+    raiz.lang=l;
+    botones.forEach(function(b){b.setAttribute('aria-pressed', b.dataset.set===l ? 'true' : 'false')});
+    try{localStorage.setItem('guia-idioma', l)}catch(e){}
+  }
+  var guardado=null; try{guardado=localStorage.getItem('guia-idioma')}catch(e){}
+  var nav=(navigator.language||'es').toLowerCase();
+  poner(guardado || (nav.indexOf('es')===0 ? 'es' : 'en'));
+  botones.forEach(function(b){b.addEventListener('click', function(){poner(b.dataset.set)})});
+
+  function copiar(t){
+    if(navigator.clipboard && window.isSecureContext){return navigator.clipboard.writeText(t)}
+    return new Promise(function(ok,no){
+      var a=document.createElement('textarea'); a.value=t; a.setAttribute('readonly','');
+      a.style.position='fixed'; a.style.opacity='0'; document.body.appendChild(a); a.select();
+      var bien=false; try{bien=document.execCommand('copy')}catch(e){}
+      document.body.removeChild(a); bien ? ok() : no();
+    });
+  }
+  document.querySelectorAll('[data-copiar]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var origen=document.getElementById(b.dataset.copiar), aviso=document.getElementById('copiado');
+      var en=raiz.lang==='en';
+      copiar(origen.textContent).then(function(){
+        aviso.textContent=en ? 'Password copied.' : 'Clave copiada.';
+      }, function(){
+        var r=document.createRange(); r.selectNodeContents(origen);
+        var s=window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        aviso.textContent=en ? 'Could not copy automatically: the password is selected, copy it by hand.'
+                             : 'No se pudo copiar sola: la clave quedó seleccionada, cópiala a mano.';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
