@@ -7,12 +7,18 @@
 <meta name="description" content="Departamento de ejemplo en la Zona Dorada, a dos cuadras de la playa · Sample apartment in the Golden Zone, two blocks from the beach">
 <meta name="robots" content="noindex">
 <style>
-:root{--acento:#0E5A6B;--fg:#1c2326;--muted:#5b6569;--line:#dfe4e5;--bg:#fbfaf7;--card:#fff;--coral:#c9492c}
+:root{--acento:#0B7A8A;--fg:#1c2326;--muted:#5b6569;--line:#e3dccd;--bg:#FBF5EA;--card:#fff;--coral:#E2603F}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-wrap:break-word}
 a{color:var(--acento)}
-header{padding:22px 16px 6px;max-width:640px;margin:0 auto}
+header{padding:22px 16px 18px;background:var(--acento);border-bottom:4px solid var(--coral);position:relative;overflow:hidden}
+header>*{max-width:608px;margin-left:auto;margin-right:auto;position:relative}
+header .sobre,header .lema{color:#E8F3F4}
+header h1,header .lema{color:#fff;padding-right:118px}
+header .lema{color:#E8F3F4}
+.heroe{position:absolute;right:max(8px,calc(50% - 312px));bottom:6px;width:120px;margin:0}
+.patron{display:block;width:100%;max-width:640px;margin:12px auto 0;height:auto}
 .sobre{font:600 .74rem/1 inherit;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
 h1{font:700 1.75rem/1.15 Georgia,"Times New Roman",serif;color:var(--acento);margin:0 0 6px;text-wrap:balance}
 .lema{color:var(--muted);font-style:italic;margin:0}
@@ -74,6 +80,7 @@ html[lang="es"] nav a[data-l="es"],html[lang="en"] nav a[data-l="en"]{display:bl
   <p class="sobre"><span data-l="es">Guía del huésped</span><span data-l="en">Guest guide</span></p>
   <h1>Depa Pelícano 27</h1>
   <p class="lema"><span data-l="es">Departamento de ejemplo en la Zona Dorada, a dos cuadras de la playa</span><span data-l="en">Sample apartment in the Golden Zone, two blocks from the beach</span></p>
+  <img class="heroe" src="heroe.png" alt="">
 </header>
 <div class="barra"><div class="barra-in">
   <div class="idioma" role="group" aria-label="Idioma / Language">
@@ -161,6 +168,7 @@ html[lang="es"] nav a[data-l="es"],html[lang="en"] nav a[data-l="en"]{display:bl
 <div class="acciones"><a class="btn" href="hoja.pdf"><span data-l="es">Hoja para imprimir (PDF)</span><span data-l="en">Printable sheet (PDF)</span></a></div>
 </section>
 </main>
+<img class="patron" src="patron.png" alt="">
 <footer>
   <p><span data-l="es">Guía de ejemplo: este departamento no existe. Cualquier duda, escríbele a tu anfitrión.</span><span data-l="en">Sample guide: this apartment does not exist. Any questions, message your host.</span></p>
 </footer>
